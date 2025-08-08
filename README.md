@@ -73,8 +73,8 @@ Each model has been trained and evaluated using a cleaned and encoded version of
 | Model                | Accuracy | Macro F1 | ROC AUC (Micro) | Generalization |
 |---------------------|----------|----------|------------------|----------------|
 | Logistic Regression | 0.73     | 0.73     | 0.84             | Good           |
-| TabNet-Inspired     | 0.79     | 0.78     | 0.94             | Very Good      |
-| Soft Voting         | 0.78     | 0.78     | 0.93             | Excellent      |
+| Soft Voting         | 0.78     | 0.78     | 0.93             | Very Good      |
+| TabNet-Inspired     | 0.79     | 0.78     | 0.94             | Excellent      |
 
 ---
 
