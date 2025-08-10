@@ -3,7 +3,6 @@
 Early screening for mental-health risk using supervised learning on large, **anonymous** survey data. The system classifies respondents as **Low / Medium / High** risk and suggests next steps. It augments counselors and wellness teams. It does **not** replace clinical judgment.
 
 [![Watch Presentation](https://img.shields.io/badge/Watch-YouTube-red)](https://youtu.be/VCkYcj3GoHY)
-[![Open EDA in Colab](https://img.shields.io/badge/Open_in-Colab-yellow)](https://colab.research.google.com/github/oxayavongsa/aai-590-capstone-mental-health/blob/main/notebook-pipeline/clean_filtered_eda.ipynb)
 [![Dataset (Kaggle)](https://img.shields.io/badge/Dataset-Kaggle-blue)](https://www.kaggle.com/datasets/bhavikjikadara/mental-health-dataset)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
@@ -71,14 +70,14 @@ Key metrics include Accuracy, Macro F1, and ROC AUC. An interactive **Gradio** U
 
 3. **Run Notebooks**<br>
    Launch any of the model training notebooks:
-   - `notebook-pipeline/models/logistic-regression/logistic_regression_model.ipynb`
-   - `notebook-pipeline/models/soft-voting/soft_voting_model.ipynb`
-   - `notebook-pipeline/models/tab-neural-network/tabular_neural_network_hypertuned.ipynb`
+   - `notebook-pipeline/models/logistic-regression/logistic_regression_model.ipynb` [![Open Logistic Regression in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/oxayavongsa/aai-590-capstone-mental-health/blob/main/notebook-pipeline/models/logistic-regression/logistic_regression_model.ipynb)
+   - `notebook-pipeline/models/soft-voting/soft_voting_model.ipynb`[![Open Soft Voting In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/oxayavongsa/aai-590-capstone-mental-health/blob/main/notebook-pipeline/models/soft-voting/soft_voting_model.ipynb)
+   - `notebook-pipeline/models/tab-neural-network/tabular_neural_network_hypertuned.ipynb` [![Open TabNet In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/oxayavongsa/aai-590-capstone-mental-health/blob/main/notebook-pipeline/models/tab-neural-network/tabular_neural_network_hypertuned.ipynb)
 
    **Launch the demo Gradio**<br>
    Run one of the UI notebooks:
-   - `user-interface/mental_health_risk_predictor_logistic.ipynb`
-   - `user-interface/mental_health_risk_predictor_TNN.ipynb`
+   - `user-interface/mental_health_risk_predictor_logistic.ipynb` [![Open Logistic Regression UI Demo In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/oxayavongsa/aai-590-capstone-mental-health/blob/main/user-interface/mental_health_risk_predictor_logistic.ipynb)
+   - `user-interface/mental_health_risk_predictor_TNN.ipynb` [![Open TabNet UI Demo In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/oxayavongsa/aai-590-capstone-mental-health/blob/main/user-interface/mental_health_risk_predictor_TNN.ipynb)
 
 ---
 
@@ -115,7 +114,7 @@ See [`requirements.txt`](./requirements.txt) for a complete list.
 
 ## 📚 License
 
-This project is licensed under the [MIT License](./LICENSE).
+This project is licensed under the [Apache License](./LICENSE).
 
 ---
 
