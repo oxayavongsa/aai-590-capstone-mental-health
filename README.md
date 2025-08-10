@@ -1,10 +1,8 @@
 # Mental Health Risk Predictor
 
-Early screening for mental-health risk using supervised learning on large, **anonymous** survey data. The system classifies respondents as **Low / Medium / High** risk and suggests next steps. It augments counselors and wellness teams. It does **not** replace clinical judgment.
-
 [![Watch Presentation](https://img.shields.io/badge/Watch-YouTube-red)](https://youtu.be/VCkYcj3GoHY)
 [![Dataset (Kaggle)](https://img.shields.io/badge/Dataset-Kaggle-blue)](https://www.kaggle.com/datasets/bhavikjikadara/mental-health-dataset)
-![License](https://img.shields.io/badge/License-MIT-green)
+[![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-green)](https://www.apache.org/licenses/LICENSE-2.0)
 
 ---
 
