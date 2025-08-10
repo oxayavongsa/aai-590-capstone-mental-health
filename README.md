@@ -1,45 +1,54 @@
 # Mental Health Risk Predictor
 
+Early screening for mental-health risk using supervised learning on large, **anonymous** survey data. The system classifies respondents as **Low / Medium / High** risk and suggests next steps. It augments counselors and wellness teams. It does **not** replace clinical judgment.
+
+[![Watch Presentation](https://img.shields.io/badge/Watch-YouTube-red)](https://youtu.be/VCkYcj3GoHY)
+[![Open EDA in Colab](https://img.shields.io/badge/Open_in-Colab-yellow)](https://colab.research.google.com/github/oxayavongsa/aai-590-capstone-mental-health/blob/main/notebook-pipeline/clean_filtered_eda.ipynb)
+[![Dataset (Kaggle)](https://img.shields.io/badge/Dataset-Kaggle-blue)](https://www.kaggle.com/datasets/bhavikjikadara/mental-health-dataset)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+---
+
 This repository contains a machine learning pipeline and Gradio-based web interface for predicting mental health risk levels using various classification models. The project is part of a capstone assignment and leverages structured clinical and behavioral data to assess mental health risk categories: Low, Medium, and High.
 
 ## 🧠 Project Overview
 
-The goal of this project is to explore and evaluate multiple classification models for multiclass mental health risk prediction. The models include:
+We evaluate three classification approaches for multiclass risk prediction:
 
-- **Logistic Regression**
-- **TabNet-Inspired Neural Network**
-- **Soft Voting Ensemble**
+- **Logistic Regression** — interpretable baseline  
+- **TabNet-inspired Tabular Neural Network** — non-linear pattern learning  
+- **Soft Voting Ensemble** — stability via averaged probabilities
 
-Each model has been trained and evaluated using a cleaned and encoded version of the Mental Health Dataset. The evaluation metrics include Accuracy, F1-Score, AUC scores, and a confusion matrix to assess performance across risk categories.
+Key metrics include Accuracy, Macro F1, and ROC AUC. An interactive **Gradio** UI provides live predictions for demo purposes.
 
 ---
 
 ## 📁 Project Structure
 
 ```
-├── data-assets/                 # All CSV and PKL files for training/testing
+├── data-assets/                                      # CSV and PKL files for training/testing
 │   ├── Mental Health Dataset.csv
 │   ├── cleaned_mental_health_data.csv
 │   ├── X_train.csv / X_test.csv
 │   ├── y_train.csv / y_test.csv
 │   └── Encoded + Scaled variants (.pkl / .csv)
 │
-├── images/                      # Visuals used for reporting and evaluation
+├── images/                                           # Visuals used for reporting and evaluation
 │
-├── notebook-pipeline/          
-│   ├── models/
-│   │   ├── logistic-regression/
-│   │   │   └── logistic_regression_model.ipynb
-│   │   ├── tab-neural-network/
-│   │   │   └── tabular_neural_network_hypertuned.ipynb
-│   │   └── soft-voting/
-│   │       └── soft_voting_model.ipynb
+├── notebook-pipeline/                                # Pipeline Order          
 │   ├── clean_filtered_eda.ipynb
-│   └── split_preprocessing.ipynb
+│   ├── split_preprocessing.ipynb
+│   └── models/
+│       ├── logistic-regression/
+│       │   └── logistic_regression_model.ipynb
+│       ├── tab-neural-network/
+│       │   └── tabular_neural_network_hypertuned.ipynb
+│       └── soft-voting/
+│            └── soft_voting_model.ipynb
 │
 ├── user-interface/
-│   ├── mental_health_risk_predictor.ipynb         # Logistic/Ensemble UI
-│   ├── mental_health_risk_predictor_TNN.ipynb     # TabNet Neural Net UI
+│   ├── mental_health_risk_predictor_logistic.ipynb    # Logistic/Ensemble UI
+│   ├── mental_health_risk_predictor_TNN.ipynb         # TabNet Neural Net UI
 │   └── gradio interface.pdf
 │
 └── README.md
@@ -60,11 +69,16 @@ Each model has been trained and evaluated using a cleaned and encoded version of
    pip install -r requirements.txt
    ```
 
-3. **Run Notebooks**
-   Launch any of the model training notebooks or the Gradio UI:
+3. **Run Notebooks**<br>
+   Launch any of the model training notebooks:
    - `notebook-pipeline/models/logistic-regression/logistic_regression_model.ipynb`
+   - `notebook-pipeline/models/soft-voting/soft_voting_model.ipynb`
    - `notebook-pipeline/models/tab-neural-network/tabular_neural_network_hypertuned.ipynb`
-   - `user-interface/mental_health_risk_predictor.ipynb` (for live predictions using Gradio)
+
+   **Launch the demo Gradio**<br>
+   Run one of the UI notebooks:
+   - `user-interface/mental_health_risk_predictor_logistic.ipynb`
+   - `user-interface/mental_health_risk_predictor_TNN.ipynb`
 
 ---
 
@@ -84,6 +98,12 @@ Each model has been trained and evaluated using a cleaned and encoded version of
 - **Advanced Feature Engineering** using clinical and behavioral indicators
 - **Interactive Gradio Interface** for real-time prediction
 - **Model Interpretability** included with feature importance analysis
+
+---
+
+## Ethics & Intended Use
+Ethics & intended use
+All examples use **anonymous** data. The system supports professional judgment and should not be used to make medical diagnoses. For any real deployment, use informed consent, privacy safeguards, access control, and bias monitoring.
 
 ---
 
