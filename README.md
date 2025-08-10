@@ -80,6 +80,8 @@ Key metrics include Accuracy, Macro F1, and ROC AUC. An interactive **Gradio** U
 
 ## 📊 Model Performance Highlights
 
+<img width="1189" height="590" alt="Final Model Comparison Bar chart" src="https://github.com/user-attachments/assets/a90c0988-9d34-40d6-8bf4-03edc1e4a763" /><br>
+
 | Model                | Accuracy | Macro F1 | ROC AUC (Micro) | Generalization |
 |---------------------|----------|----------|------------------|----------------|
 | Logistic Regression | 0.73     | 0.73     | 0.84             | Good           |
@@ -97,7 +99,7 @@ Key metrics include Accuracy, Macro F1, and ROC AUC. An interactive **Gradio** U
 
 ---
 
-## Ethics & Intended Use
+## ⚖️ Ethics & Intended Use
 Ethics & intended use
 All examples use **anonymous** data. The system supports professional judgment and should not be used to make medical diagnoses. For any real deployment, use informed consent, privacy safeguards, access control, and bias monitoring.
 
@@ -117,5 +119,6 @@ This project is licensed under the [Apache License](./LICENSE).
 
 ## 🙌 Acknowledgements
 
-- This capstone was completed as part of the AAI-590 course.
-- Credit to all contributors and team members involved in model development and UI implementation.
+- This capstone was completed in AAI-590 within the Shiley-Marcos School of Engineering at the University of San Diego.
+- Team: Outhai Xayavongsa (Team Lead), Aaron Ramirez (Tech Lead), and Prema Mallikarjunan.
+- We thank Professor Anna Marbut for her guidance and mentorship.
