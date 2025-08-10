@@ -2,7 +2,7 @@
 
 [![Watch Presentation](https://img.shields.io/badge/Watch-YouTube-red)](https://youtu.be/VCkYcj3GoHY)
 [![Dataset (Kaggle)](https://img.shields.io/badge/Dataset-Kaggle-blue)](https://www.kaggle.com/datasets/bhavikjikadara/mental-health-dataset)
-[![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-green)](https://www.apache.org/licenses/LICENSE-2.0)
+[![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-green)]([https://www.apache.org/licenses/LICENSE-2.0](https://github.com/oxayavongsa/aai-590-capstone-mental-health?tab=Apache-2.0-1-ov-file))
 
 ---
 
